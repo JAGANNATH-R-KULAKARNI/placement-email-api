@@ -42,6 +42,7 @@ async function sendMail(details) {
       subject: details.subject,
       text: details.text,
       html: details.htm,
+      attachments: details.attachments,
     };
 
     const result = await transport.sendMail(mailOptions);
