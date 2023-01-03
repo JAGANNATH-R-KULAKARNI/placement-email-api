@@ -71,6 +71,13 @@ app.post("/sendmail", async (req, res) => {
     });
 });
 
+app.get("/jagannath", async (req, res) => {
+  return res.send({
+    msg: "The endpoint is working",
+    success: true,
+  });
+});
+
 app.listen(process.env.PORT || 3001, () => {
   console.log("server running on port 3001");
 });
